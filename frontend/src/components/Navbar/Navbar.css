@@ -1,0 +1,135 @@
+/* Navbar container */
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar .logo {
+  width: 150px;
+}
+
+/* Menu items */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+}
+
+.navbar li {
+  cursor: pointer;
+  display: inline-block; 
+  padding: 5px 0;
+  transition: border-color 0.3s ease;
+}
+.navbar li a {
+  text-decoration: none;
+}
+.agelgil{
+  font-size: 40px;
+  font-weight: 1100;
+  color: chocolate;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: none;
+}
+
+/* Active state with underline */
+.navbar .active {
+  border-bottom: 2px solid #49557e;
+}
+
+/* Right side (search, basket, button) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Basket wrapper */
+.navbar-search-icon {
+  position: relative;
+}
+
+/* Red notification dot */
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -6px;
+  right: -6px;
+}
+
+/* Sign in button */
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.navbar button:hover {
+  background: #d39286;
+  color: white;
+  border-color: #d39286;
+}
+
+@media(max-width:1050px){
+  .navbar .logo{
+    width:140px;
+  }
+  .navbar-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right{
+    gap:30px;
+  }
+  .navbar-right img{
+    width:22px;
+  }
+  .navbar-right button{
+    padding: 8px 25px;
+  }
+}
+@media(max-width:900px){
+  .navbar .logo{
+    width:120px;
+  }
+  .navbar-menu{
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right{
+    gap:20px;
+  }
+  .navbar-right img{
+    width:20px;
+  }
+  .navbar-right button{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+@media(max-width:750px){
+
+  .navbar-menu{
+   display: none;
+  }
+  }

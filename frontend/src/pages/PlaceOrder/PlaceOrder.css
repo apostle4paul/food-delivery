@@ -1,0 +1,134 @@
+.place-order {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  margin: 80px auto;
+  max-width: 1100px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* LEFT SIDE (Delivery Info) */
+.place-order-left {
+  width: 100%;
+  max-width: 550px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.place-order-left .title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.place-order-left input:focus {
+  border-color: tomato;
+  box-shadow: 0 0 3px rgba(255, 99, 71, 0.4);
+  outline: none;
+}
+
+/* ✅ Equal + Aligned Multi-field Inputs */
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.place-order-left .multi-fields input {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+/* RIGHT SIDE (Cart Totals) */
+.place-order-right {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.place-order-right .cart-total h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.cart-total-details b {
+  font-size: 18px;
+}
+
+.place-order .cart-total button {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.place-order .cart-total button:hover {
+  background-color: #e0523f;
+}
+
+/* ✅ Responsive Design for Tablets and Mobile */
+@media (max-width: 1024px) {
+  .place-order {
+    gap: 40px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .place-order-left .title {
+    font-size: 24px;
+  }
+
+  .place-order .cart-total button {
+    font-size: 15px;
+  }
+}
