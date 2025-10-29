@@ -162,7 +162,7 @@ export const food_list = [
     price: 14,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "salad",
+    category: "Salad",
   },
   {
     _id: "6",
@@ -360,7 +360,7 @@ export const food_list = [
     price: 16,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Desert",
+    category: "Deserts",
   },
   {
     _id: "28",
@@ -414,6 +414,6 @@ export const food_list = [
     price: 15,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Desert",
+    category: "Deserts",
   },
 ];
